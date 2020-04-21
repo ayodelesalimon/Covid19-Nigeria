@@ -1,58 +1,51 @@
 <!-- Created by Ayodele Salimonu-->
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>
-			
-		</title>
-		<link type="text/css" href=
-		"https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-rel="stylesheet"><script type="text/javascript" src=
-"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js">
-</script>
-	</head>
-	<body>
-		<div class=
-		"min-h-screen bg-gray-200 container mx-auto p-6 max-w-screen-lg bg-teal-100 rounded-lg shadow-lg p-6">
-			<div class="relative">
-				<img src=
-				"https://img.icons8.com/color/1600/coronavirus.png"
-				class="absolute top-0 right-0 w-16 h-16">
-			</div>
-			<div class="text-3xl text-purple-500 pb-2 font-bold">
-				Corona Virus Cases
-			</div>
-			<div class="text-xl text-gray-800">
-				NIGERIA
-			</div>
-			<div class="flex flex-col items-center justify-center">
-				<div class=
-				"bg-orange-300 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
-					Total cases 
-					<div id="a" class="text-xl text-black">
-					</div>
-				</div>
-				<div class=
-				"bg-red-400 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
-					Total deaths 
-					<div id="b" class="text-xl text-black">
-					</div>
-				</div>
-				<div class=
-				"bg-green-400 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
-					Total recovered 
-					<div id="c" class="text-xl text-black">
-					</div>
+
+<head>
+	<title>
+		Covid-19 Updatets- - Nigeria
+	</title>
+	<link type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js">
+	</script>
+</head>
+
+
+<body>
+	<div class="min-h-screen bg-gray-200 container mx-auto p-6 max-w-screen-lg bg-teal-100 rounded-lg shadow-lg p-6">
+		<div class="relative">
+			<img src="https://img.icons8.com/color/1600/coronavirus.png" class="absolute top-0 right-0 w-16 h-16">
+		</div>
+		<div class="text-3xl text-purple-500 pb-2 font-bold">
+			Corona Virus Cases
+		</div>
+		<div class="text-xl text-gray-800">
+			NIGERIA
+		</div>
+		<div class="flex flex-col items-center justify-center">
+			<div class="bg-orange-300 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
+				Total cases
+				<div id="a" class="text-xl text-black">
 				</div>
 			</div>
-			<div class="text-xl text-gray-800 mt-2 py-2">
-				State Wise Reports
-			</div> <label class=
-			"block uppercase tracking-wide text-gray-700" for=
-			"grid-first-name">Choose State: <select class=
-			"ml-3 text-sm bg-white-700 border border-white-200 text-white p-2 rounded leading-tight"
-			 id="select">
-				
+			<div class="bg-red-400 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
+				Total deaths
+				<div id="b" class="text-xl text-black">
+				</div>
+			</div>
+			<div class="bg-green-400 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
+				Total recovered
+				<div id="c" class="text-xl text-black">
+				</div>
+			</div>
+		</div>
+		<div class="text-xl text-gray-800 mt-2 py-2">
+			State Wise Reports
+		</div> <label class="block uppercase tracking-wide text-gray-700" for="grid-first-name">Choose State: <select
+				class="ml-3 text-sm bg-white-700 border border-white-200 text-white p-2 rounded leading-tight"
+				id="select">
+
 				<option value="Abia">
 					Abia
 				</option>
@@ -95,10 +88,10 @@ rel="stylesheet"><script type="text/javascript" src=
 				<option value="Enugu">
 					Enugu
 				</option>
-        <option value="Abuja FCT">
+				<option value="Abuja FCT">
 					Abuja FCT
 				</option>
-        
+
 				<option value="Gombe">
 					Gombe
 				</option>
@@ -165,88 +158,84 @@ rel="stylesheet"><script type="text/javascript" src=
 				<option value="Zamfara">
 					Zamfara
 				</option>
-			</select></label> 
-			<div id="s" class="py-4">
+			</select></label>
+		<div id="s" class="py-4">
+		</div>
+		<div class="flex sm:flex-col lg:flex-row">
+			<div class="bg-orange-300 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
+				Total cases
+				<div id="s1" class="text-xl text-black">
+				</div>
 			</div>
-			<div class="flex sm:flex-col lg:flex-row">
-				<div class=
-				"bg-orange-300 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
-					Total cases 
-					<div id="s1" class="text-xl text-black">
-					</div>
+			<div class="bg-red-400 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
+				Total deaths
+				<div id="s2" class="text-xl text-black">
 				</div>
-				<div class=
-				"bg-red-400 flex w-24 h-auto m-2 p-2 rounded  text-sm text-gray-700">
-					Total deaths 
-					<div id="s2" class="text-xl text-black">
-					</div>
-				</div>
-				<div class=
-				"bg-green-400 flex w-28 h-auto m-2 p-2 rounded  text-sm text-gray-700">
-					Total recovered 
-					<div id="s3" class="text-xl text-black">
-					</div>
+			</div>
+			<div class="bg-green-400 flex w-28 h-auto m-2 p-2 rounded  text-sm text-gray-700">
+				Total recovered
+				<div id="s3" class="text-xl text-black">
 				</div>
 			</div>
 		</div>
-		<div class=
-		"min-h-full bg-gray-200 container mx-auto p-6 max-w-screen-lg bg-teal-100 rounded-lg shadow-lg p-2">
-			<img src=
-			"https://cdn2.iconfinder.com/data/icons/coronavirus-how-to-protect-yourself-1/512/MaskFemale007-512.png"
-			 class="h-40 w-40"> 
-			<div class=
-			" relative text-2xl absolute right-0 bottom-0 px-2 mb-4">
-				#StaySafe<br>
+	</div>
+	<div class="min-h-full bg-gray-200 container mx-auto p-6 max-w-screen-lg bg-teal-100 rounded-lg shadow-lg p-2">
+		<img src="https://cdn2.iconfinder.com/data/icons/coronavirus-how-to-protect-yourself-1/512/MaskFemale007-512.png"
+			class="h-40 w-40">
+		<div class=" relative text-2xl absolute right-0 bottom-0 px-2 mb-4">
+			#StaySafe<br>
 
-				#StayHome
-			</div>
-</div><script type="text/javascript">
-
-
-$.ajax({
-  url: 'https://api.thevirustracker.com/free-api?countryTotal=NG',
-  dataType: 'json',
-  success: function(data) {
-	$(document).ready(function(){
-   $("#a").text(data.countrydata[0].total_cases);
-   $("#b").text(data.countrydata[0].total_deaths);
-   $("#c").text(data.countrydata[0].total_recovered);
-});
-  }
-});
+			#StayHome
+		</div>
+	</div>
+	<script type="text/javascript">
 
 
-</script>
-		<!-- <script>
+		$.ajax({
+			url: 'https://api.thevirustracker.com/free-api?countryTotal=NG',
+			dataType: 'json',
+			success: function (data) {
+				$(document).ready(function () {
+					$("#a").text(data.countrydata[0].total_cases);
+					$("#b").text(data.countrydata[0].total_deaths);
+					$("#c").text(data.countrydata[0].total_recovered);
+				});
+			}
+		});
 
-		var settings = {		"async": true, 
-				"crossDomain": true,	
+
+	</script>
+	<!-- <script>
+
+		var settings = {		"async": true,
+				"crossDomain": true,
 				"url": "https://nigeria-covid-19.p.rapidapi.com/api/states",
-						"method": "GET", 
-								"headers": {			"x-rapidapi-host": "nigeria-covid-19.p.rapidapi.com",   
-										"x-rapidapi-key": "5ce2f575d5msh75c383fe93bd857p1ba446jsn12438cb3bced" 
-												} } 
-												$.ajax(settings).done(function (response) {	 
+						"method": "GET",
+								"headers": {			"x-rapidapi-host": "nigeria-covid-19.p.rapidapi.com",
+										"x-rapidapi-key": "5ce2f575d5msh75c383fe93bd857p1ba446jsn12438cb3bced"
+												} }
+												$.ajax(settings).done(function (response) {
 												console.log(response); });
 
 
 		</script> -->
-		
-<script type="text/javascript">
-			var selectElem = document.getElementById("select");
-			$.ajax({
-  url: 'https://covid19project.org.ng/api/endpoints/states',
-  dataType: 'json',
-  success: function(res) {
-			selectElem.addEventListener('change', function() {
-		var i = selectElem.selectedIndex;
-		$("#s").text(res.Covid19NG[i].name);
-		$("#s1").text(res.Covid19NG[i].cases);
-		$("#s2").text(res.Covid19NG[i].death);
-		$("#s3").text(res.Covid19NG[i].recovered);
-});
-}
-});
-		</script>
-	</body>
+
+	<script type="text/javascript">
+		var selectElem = document.getElementById("select");
+		$.ajax({
+			url: 'https://covid19project.org.ng/api/endpoints/states',
+			dataType: 'json',
+			success: function (res) {
+				selectElem.addEventListener('change', function () {
+					var i = selectElem.selectedIndex;
+					$("#s").text(res.Covid19NG[i].name);
+					$("#s1").text(res.Covid19NG[i].cases);
+					$("#s2").text(res.Covid19NG[i].death);
+					$("#s3").text(res.Covid19NG[i].recovered);
+				});
+			}
+		});
+	</script>
+</body>
+
 </html>
