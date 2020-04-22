@@ -8,15 +8,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="style.css" />
-	<!-- <script type="text/javascript" src="index.js"> </script> -->
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"> </script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-
-	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 </head>
-
 
 <body>
 	<header class="navbar navbar-dark bg-light shadow">
@@ -52,11 +45,9 @@
 		</div>
 	</section>
 
-
 	<div class="border-top border-bottom">
 		<img class="w-100" src="hand-washing.jpg" alt="hand Washing" />
 	</div>
-
 
 	<div class="my-5 mx-3 mx-md-5">
 		<div class="h1 text-purple">State Wise Reports</div>
@@ -182,7 +173,6 @@
 		</div>
 	</div>
 
-
 	<div class=" my-4 mx-3 mx-md-5">
 		<div class="row text-center">
 			<div class="col bg-warning text-danger rounded shadow m-3 p-3 p-md-5">
@@ -203,7 +193,6 @@
 		</div>
 	</div>
 
-
 	<footer class="bg-light border-top mt-5">
 		<div class="d-flex justify-content-between align-items-center p-4">
 			<img src="https://cdn2.iconfinder.com/data/icons/coronavirus-how-to-protect-yourself-1/512/MaskFemale007-512.png"
@@ -220,54 +209,11 @@
 	</footer>
 </body>
 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet" />
 
-<script type="text/javascript">
-	$.ajax({
-		url: 'https://api.thevirustracker.com/free-api?countryTotal=NG',
-		dataType: 'json',
-		success: function (data) {
-			$(document).ready(function () {
-				$("#a").text(data.countrydata[0].total_cases);
-				$("#b").text(data.countrydata[0].total_deaths);
-				$("#c").text(data.countrydata[0].total_recovered);
-			});
-		}
-	});
-</script>
-
-<!--
-<script>
-	var settings = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://nigeria-covid-19.p.rapidapi.com/api/states",
-		"method": "GET",
-		"headers": {
-			"x-rapidapi-host": "nigeria-covid-19.p.rapidapi.com",
-			"x-rapidapi-key": "5ce2f575d5msh75c383fe93bd857p1ba446jsn12438cb3bced"
-		}
-	}
-	$.ajax(settings).done(function (response) {
-		console.log(response);
-	});
-</script>
--->
-
-<script type="text/javascript">
-	var selectElem = document.getElementById("select");
-	$.ajax({
-		url: 'https://covid19project.org.ng/api/endpoints/states',
-		dataType: 'json',
-		success: function (res) {
-			selectElem.addEventListener('change', function () {
-				var i = selectElem.selectedIndex - 1;
-				$("#s").text(res.Covid19NG[i].name);
-				$("#s1").text(res.Covid19NG[i].cases);
-				$("#s2").text(res.Covid19NG[i].death);
-				$("#s3").text(res.Covid19NG[i].recovered);
-			});
-		}
-	});
-</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
 
 </html>

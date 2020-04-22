@@ -33,7 +33,7 @@ $.ajax({
   success: function (res) {
     selectElem.addEventListener("change", function () {
       var i = selectElem.selectedIndex - 1;
-      $("#s").text(res.Covid19NG[i].name);
+      //$("#s").text(res.Covid19NG[i].name);
       $("#s1").text(res.Covid19NG[i].cases);
       $("#s2").text(res.Covid19NG[i].death);
       $("#s3").text(res.Covid19NG[i].recovered);
