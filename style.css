@@ -4,6 +4,7 @@ body {
   font-family: "Anton", sans-serif;
 }
 
+a,
 .text-purple {
-  color: #aa1db1 !important; /*purple from the logo*/
+  color: #74159b !important; /*purple from the logo*/
 }
