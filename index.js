@@ -3,14 +3,21 @@ $.ajax({
   dataType: "json",
   success: function (data) {
     $(document).ready(function () {
-      $("#a").text(data.countrydata[0].total_cases);
-      $("#b").text(data.countrydata[0].total_deaths);
-      $("#c").text(data.countrydata[0].total_recovered);
+      $("#totalCases").text(data.countrydata[0].total_cases);
+      $("#totalDeaths").text(data.countrydata[0].total_deaths);
+      $("#totalRecovered").text(data.countrydata[0].total_recovered);
+$("#newCases").text(data.countrydata[0].total_new_cases_today);
+$("#newDeaths").text(data.countrydata[0].total_new_deaths_today);
+
+
     });
   },
 });
 
 /*
+
+total_new_cases_today":87, "total_new_deaths_today":3,
+
 var settings = {
   async: true,
   crossDomain: true,
@@ -34,9 +41,9 @@ $.ajax({
     selectElem.addEventListener("change", function () {
       var i = selectElem.selectedIndex - 1;
       //$("#s").text(res.Covid19NG[i].name);
-      $("#s1").text(res.Covid19NG[i].cases);
-      $("#s2").text(res.Covid19NG[i].death);
-      $("#s3").text(res.Covid19NG[i].recovered);
+      $("#stateCases").text(res.Covid19NG[i].cases);
+      $("#stateDeaths").text(res.Covid19NG[i].death);
+      $("#stateRecovered").text(res.Covid19NG[i].recovered);
     });
   },
 });

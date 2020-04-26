@@ -3,7 +3,7 @@
 
 <head>
 	<title>
-		Covid-19 Updatets - Nigeria
+		Covid-19 Updates - Nigeria
 	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,20 +26,38 @@
 	</header>
 
 	<section class="my-5 mx-3 mx-md-5 ">
+	<h2 class="text-purple">Today</h2>
+		<div class="row text-center">
+		<div class="col bg-info text-white rounded shadow m-3 p-3 p-md-5">
+				<div class="h3">New Cases</div>
+				<div id="newCases" class="h2 mt-4">
+				</div>
+			</div>
+			<div class="col bg-danger text-warning rounded shadow m-3 p-3 p-md-5">
+				<div class="h3">New Deaths</div>
+				<div id="newDeaths" class="h2 mt-4">
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<section class="my-5 mx-3 mx-md-5 ">
+	<h2 class="text-purple">Total Reports</h2>
 		<div class="row text-center">
 			<div class="col bg-warning text-danger rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Confirmed Cases</div>
-				<div id="a" class="h2 mt-4">
+				<div id="totalCases" class="h2 mt-4">
 				</div>
 			</div>
 			<div class="col bg-success text-white rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Recovered</div>
-				<div id="c" class="h2 mt-4">
+				<div id="totalRecovered" class="h2 mt-4">
 				</div>
 			</div>
+			
 			<div class="col bg-danger text-warning rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Deaths Recorded</div>
-				<div id="b" class="h2 mt-4">
+				<div id="totalDeaths" class="h2 mt-4">
 				</div>
 			</div>
 		</div>
@@ -100,7 +118,7 @@
 					Enugu
 				</option>
 				<option value="Abuja FCT">
-					Abuja FCT
+					FCT- Abuja
 				</option>
 
 				<option value="Gombe">
@@ -177,18 +195,18 @@
 		<div class="row text-center">
 			<div class="col bg-warning text-danger rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Confirmed Cases</div>
-				<div id="s1" class="h2 mt-4"></div>
+				<div id="stateCases" class="h2 mt-4"></div>
 			</div>
 
 			<div class="col bg-success text-white rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Recovered
 				</div>
-				<div id="s3" class="h2 mt-4"></div>
+				<div id="stateRecovered" class="h2 mt-4"></div>
 			</div>
 
 			<div class="col bg-danger text-warning rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Deaths Recorded </div>
-				<div id="s2" class="h2 mt-4"></div>
+				<div id="stateDeaths" class="h2 mt-4"></div>
 			</div>
 		</div>
 	</div>
