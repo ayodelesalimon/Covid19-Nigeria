@@ -3,12 +3,11 @@
 
 <head>
 	<title>
-		Covid-19 Updatets - Nigeria
+		Covid-19 Updates - Nigeria
 	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
@@ -26,20 +25,38 @@
 	</header>
 
 	<section class="my-5 mx-3 mx-md-5 ">
+		<h2 class="text-purple">Today</h2>
 		<div class="row text-center">
-			<div class="col bg-warning text-danger rounded shadow m-3 p-3 p-md-5">
-				<div class="h3">Total Confirmed Cases</div>
-				<div id="a" class="h2 mt-4">
-				</div>
-			</div>
-			<div class="col bg-success text-white rounded shadow m-3 p-3 p-md-5">
-				<div class="h3">Total Recovered</div>
-				<div id="c" class="h2 mt-4">
+			<div class="col bg-info text-white rounded shadow m-3 p-3 p-md-5">
+				<div class="h3">New Cases</div>
+				<div id="newCases" class="h2 mt-4">
 				</div>
 			</div>
 			<div class="col bg-danger text-warning rounded shadow m-3 p-3 p-md-5">
+				<div class="h3">New Deaths</div>
+				<div id="newDeaths" class="h2 mt-4">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="my-5 mx-3 mx-md-5 ">
+		<h2 class="text-purple">Total Reports</h2>
+		<div class="row text-center">
+			<div class="col bg-warning text-danger rounded shadow m-3 p-3 p-md-5">
+				<div class="h3">Total Confirmed Cases</div>
+				<div id="totalCases" class="h2 mt-4">
+				</div>
+			</div>
+			<div class="col bg-success text-white rounded shadow m-3 p-3 p-md-5">
+				<div class="h3">Total Recovered Cases</div>
+				<div id="totalRecovered" class="h2 mt-4">
+				</div>
+			</div>
+
+			<div class="col bg-danger text-warning rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Deaths Recorded</div>
-				<div id="b" class="h2 mt-4">
+				<div id="totalDeaths" class="h2 mt-4">
 				</div>
 			</div>
 		</div>
@@ -100,7 +117,7 @@
 					Enugu
 				</option>
 				<option value="Abuja FCT">
-					Abuja FCT
+					FCT - Abuja
 				</option>
 
 				<option value="Gombe">
@@ -177,30 +194,47 @@
 		<div class="row text-center">
 			<div class="col bg-warning text-danger rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Confirmed Cases</div>
-				<div id="s1" class="h2 mt-4"></div>
+				<div id="stateCases" class="h2 mt-4"></div>
 			</div>
 
 			<div class="col bg-success text-white rounded shadow m-3 p-3 p-md-5">
-				<div class="h3">Total Recovered
+				<div class="h3">Total Recovered Cases
 				</div>
-				<div id="s3" class="h2 mt-4"></div>
+				<div id="stateRecovered" class="h2 mt-4"></div>
 			</div>
 
 			<div class="col bg-danger text-warning rounded shadow m-3 p-3 p-md-5">
 				<div class="h3">Total Deaths Recorded </div>
-				<div id="s2" class="h2 mt-4"></div>
+				<div id="stateDeaths" class="h2 mt-4"></div>
 			</div>
 		</div>
 	</div>
 
 	<footer class="bg-light border-top mt-5">
-		<div class="d-flex justify-content-between align-items-center p-4">
-			<img src="https://cdn2.iconfinder.com/data/icons/coronavirus-how-to-protect-yourself-1/512/MaskFemale007-512.png"
-				width="200" />
-			<div class="h2 text-purple ">
-				#StaySafe
-				<br />
-				#StayHome
+		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center p-4">
+			<div>
+				<p class="h5 pb-4">Useful Links</p>
+				<p>
+					<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">Advice
+						For The Public</a>
+				</p>
+				<p>
+					<a href="https://covid19.ncdc.gov.ng/resource/guideline/SelfIsolation_QuarantineGuide.pdf">Self
+						Isolation and
+						Quarantine Guide</a>
+				</p>
+				<p>
+					<a href="https://covid19.ncdc.gov.ng/resource/guideline/UseOfMasks.pdf">Advisory on the
+						Use of Masks</a>
+				</p>
+			</div>
+
+			<div>
+				<img src="masked.png" width="150" /></div>
+			<div class="h5 ">
+				<p>Stay Home.</p>
+				<p> Stay Safe.</p>
+				<p> Save Lives.</p>
 			</div>
 		</div>
 		<div class="border-top text-center h5 p-3">
